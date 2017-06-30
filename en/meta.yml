@@ -1,12 +1,12 @@
-title: rpi-vnc-access
+title: Accessing your Raspberry Pi via VNC
 hero_image: images/banner.png
-description: rpi-vnc-access description
-original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
+description: access and use your Raspberry Pi with VNC
+original_url: 
 theme: cc-prototype
-duration: 1 # 1, 2 or 3
+duration: 1
 listed: false
-ingredient: false
-interests: "games, photography, physical computing"
-technologies: "electronics, physical computing, python, scratch"
+ingredient: true
+interests: 
+technologies: "vnc"
 steps:
-  - title: Step one
+  - title: Using VNC

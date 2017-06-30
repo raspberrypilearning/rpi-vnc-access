@@ -1,124 +1,63 @@
-# New project
+As long as your Raspberry Pi is networked, either via WiFi or ethernet, you can operate it remotely from any existing networked computer.
 
-Each project contains a set of directories for each language, you're set up now with an `en` directory that contains the necessary files to get you going.
+Virtual Network Computing (VNC) is a protocol that allows you to control one computer from another computer. The advantage of using VNC is that you gain access to the full desktop of the Raspberry Pi, meaning you can use graphical programs from the connected computer.
 
-* [meta.yml](#metayml)
-* [Steps - step_1.md, step_2.md, etc](#steps)
+- The first thing to do is to enable the VNC server on the Raspberry Pi. Raspbian comes pre-installed with [RealVNC](https://www.realvnc.com/){:target="_blank"}.
 
+- Click on `Menu`>`Preferences`>`Raspberry Pi Configuration`.
 
-## meta.yml
+![config menu](images/config.png)
 
-The `meta.yml` file sets lots of basic information for the project.
+- Then you need to enable the VNC Server by clicking the `Enabled` Radio button.
 
-``` yml
-title: The title of the project
-hero_image: images/banner.png # The image used on the listing view and in the project header
-description: Project description # Used on the listing view
-original_url: https://codeclubprojects.org/en-GB/scratch/rock-band # Provides a link back to the original project
-theme: cc-prototype # sets the colour scheme
-duration: 1 # 1, 2 or 3
-listed: false # A boolean - `true` or`false` - that controls whether the project will appear on the listing view
-ingredient: false # A boolean - `true` or`false` - that controls whether the project will appear on the listing view if published to master branch
-interests: "jokes/pranks, sports, art/design, photography, games, outside/weather/nature, space, animals, music/sound"
-technologies: "scratch, python, html/css, micro:bit"
-steps: # A list of all the steps
-  - title: How to get started # Used as the sidebar title for the step
-```
+![preferences](images/preferences.png)
 
-The list for interests and technologies is generated from the tags defined via the admin site. Once a project is tagged with e.g scratch it will start appearing in the generated list for new projects.
+You should see the icon for the VNC Server in your menu bar.
 
-## Steps
+![menu](images/menu.png)
 
-* [Links](#links)
-* [Resources](#resources)
-* [Images](#images)
-* [Challenges](#challenges)
-* [Definitions](#definitions)
-* [Hints](#hints)
-* [Collapsed ingredients](#collapsed-ingredients)
+Your VNC Server will now start whenever the Pi is booted, and will continue to do so until you disable the VNC Server again.
 
-Project steps are written in the [Kramdown](https://kramdown.gettalong.org/) variety of markdown. There is a [quick reference guide](https://kramdown.gettalong.org/quickref.html) and [full syntax documentation](https://kramdown.gettalong.org/syntax.html). A [custom kramdown extension](https://github.com/RaspberryPiFoundation/kramdown_rpf) is used for hints, challenges & ingredients.
+To connect to the Raspberry Pi from another computer, you can follow the instructions in one of the links below:
 
-### Links, resources & images
+### Conecting  with Windows, Linux and Mac OS
 
-See [kramdown documentation](https://kramdown.gettalong.org/quickref.html#links-and-images) for more details.
+There are many VNC viewers that can be downloaded and used with your main desktop computer. For simplicity's sake, the instructions below are for using RealVNC.
 
-#### Links
+- Download the client for your preferred operating system from the [RealVNC](https://www.realvnc.com/download/viewer){:target="_blank"} website.
+- Install the downloaded software.
+- When you run the software for the first time, you will be asked to accept the terms and conditions.
+- You can now connect remotely to your Raspberry Pi by typing its IP address into the connection bar. If you don't know the IP address of your Raspberry Pi, you can find it by clicking on the RealVNC icon on the Raspberry Pi's desktop.
 
-A [link](http://kramdown.gettalong.org) to the kramdown homepage.
+  ![ip address](images/ip.png)
 
-You can add  a link that opens in a new browser window/tab [like this](https://google.com/){:target="_blank"}
+- Next, you'll be asked to authenticate. Type in your Raspberry Pi username and password (the default is `pi` and `raspberry`).
 
-#### Resources
+  ![authentication](images/authentication.png)
 
-A [link to a file in the resources directory](resources/worksheet.pdf){:download='filename.pdf'}. The download part will make the file automatically download rather than be rendered in the browser, the filename you'd like the file to be saved with is the second bit after the `=`. The `/learning` application will ensure the resource is available.
+- You should now have a remote desktop session.
 
-#### Images
+  ![remote](images/remote.png)
 
-![Banner image](images/banner.png) - the link text becomes the alternative text for the image. The `/learning` application will ensure the image is available.
+### VNC with Chrome OS
 
-#### Challenges
+You'll need an app from the Chrome Web Store to use VNC on a Chromebook.
 
-``` markdown
---- challenge ---
+- In the Chrome Web Store, search for 'VNC Viewer for Google Chrome' and add the application to Chrome:
 
-## Challenge: Improving your drum
+  ![](images/vnc-chrome1.png)
 
-* Any markdown in here
-* will be parsed as normal
+- With the app open, you can type in the IP address and desktop number for the Raspberry Pi:
 
---- /challenge ---
-```
+  ![](images/vnc-chrome3.png)
 
+- Enter the password at the prompt:
 
-### Definitions
+  ![](images/vnc-chrome4.png)
 
-Definitions can be written using HTML abbreviations, which are a standard part of [kramdown](https://kramdown.gettalong.org/quickref.html#abbreviations)
+- You should now be connected to the Raspberry Pi:
 
-```
-To do this you might require a variable or a two word definition.
+![](images/vnc-chrome5.png)
 
-*[variable]: An object that has a name and stores a value.
-
-*[two word]: Definitions are markdown, and can have [links](http://kramdown.gettalong.org) etc
-```
-
-
-### Hints
-
-A header for the hint, and all the html markup for hints will be automatically added.
-
-```
---- hints ---
---- hint ---
-
-Here's a hint of how to do this project.
-
-Any markdown you like within a hint:
-* item 1
-* item 2
-
---- /hint ---
---- hint ---
-Hint 2
-
---- /hint ---
---- hint ---
-
-Hint 3
---- /hint ---
---- hint ---
-Hint 4
---- /hint ---
-
---- /hints ---
-```
-
-### Ingredients
-
-An ingredient is a bit of reusable content from another project. All ingredients appear collapsed to users, the title for the collapsed element is the title of the ingredient project.
-
-To add an ingredient to your content:
-```
-[[[generic-scratch-new-project]]]
-```
+### Other platforms
+Most mobile platforms (Android, iOS, Windows Mobile) have their own VNC apps availabl in their respective app-stores that you can also use.
