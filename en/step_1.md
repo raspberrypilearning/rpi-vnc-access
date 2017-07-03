@@ -1,4 +1,4 @@
-As long as your Raspberry Pi is networked, either via WiFi or ethernet, you can operate it remotely from any existing networked computer.
+As long as your Raspberry Pi is networked, either via WiFi or Ethernet, you can operate it remotely from any existing networked computer.
 
 Virtual Network Computing (VNC) is a protocol that allows you to control one computer from another computer. The advantage of using VNC is that you gain access to the full desktop of the Raspberry Pi, meaning you can use graphical programs from the connected computer.
 
@@ -20,7 +20,7 @@ Your VNC Server will now start whenever the Pi is booted, and will continue to d
 
 To connect to the Raspberry Pi from another computer, you can follow the instructions in one of the links below:
 
-### Conecting  with Windows, Linux and Mac OS
+### Connecting  with Windows, Linux and Mac OS
 
 There are many VNC viewers that can be downloaded and used with your main desktop computer. For simplicity's sake, the instructions below are for using RealVNC.
 
@@ -60,4 +60,4 @@ You'll need an app from the Chrome Web Store to use VNC on a Chromebook.
 ![](images/vnc-chrome5.png)
 
 ### Other platforms
-Most mobile platforms (Android, iOS, Windows Mobile) have their own VNC apps availabl in their respective app-stores that you can also use.
+Most mobile platforms (Android, iOS, Windows Mobile) have their own VNC apps available in their respective app-stores that you can also use.
