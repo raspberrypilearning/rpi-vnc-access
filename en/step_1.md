@@ -8,15 +8,15 @@ Virtual Network Computing (VNC) is a protocol that allows you to control one com
 
 ![config menu](images/config.png)
 
-- Enable the VNC Server by clicking the respective radio button, and click **OK**.
+- Enable the VNC server by clicking the respective radio button, and click **OK**.
 
 ![preferences](images/preferences.png)
 
-You should then see the icon for the VNC Server in your menu bar.
+You should then see the icon for the VNC server in your menu bar.
 
 ![menu](images/menu.png)
 
-Your VNC Server will now start whenever the Pi is booted, and will continue to do so until you disable the VNC Server again.
+Your VNC server will now start whenever the Pi is booted, and will continue to do so until you disable the VNC server again.
 
 To connect to the Raspberry Pi from another computer, follow the instructions in one of the links below:
 
