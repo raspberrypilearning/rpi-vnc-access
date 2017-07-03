@@ -18,11 +18,11 @@ You should then see the icon for the VNC server in your menu bar.
 
 Your VNC server will now start whenever the Pi is booted, and will continue to do so until you disable the VNC server again.
 
-To connect to the Raspberry Pi from another computer, follow the instructions in one of the links below:
+To connect to the Raspberry Pi from another computer, follow the instructions in one of the links below.
 
 ### Connecting with Windows, Linux, or macOS
 
-There are many VNC viewers that can be downloaded and used with your main desktop computer. For simplicity's sake, the instructions below are for using RealVNC.
+There are many VNC viewers that can be downloaded and used on your desktop computer. For simplicity's sake, the instructions below are for using RealVNC.
 
 - Download the client for your preferred operating system from the [RealVNC](https://www.realvnc.com/download/viewer){:target="_blank"} website.
 - Install the downloaded software.
