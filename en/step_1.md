@@ -8,7 +8,7 @@ Virtual Network Computing (VNC) is a protocol that allows you to control one com
 
 ![config menu](images/config.png)
 
-- Enable the VNC Server by clicking the respective radio button.
+- Enable the VNC Server by clicking the respective radio button, and click **OK**.
 
 ![preferences](images/preferences.png)
 
