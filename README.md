@@ -1,3 +1,3 @@
 # rpi-vnc-access
 
-Don't forget to update the project name in LICENSE.md
+How to access your raspberry Pi via VNC
