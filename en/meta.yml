@@ -5,6 +5,7 @@ original_url:
 theme: cc-prototype
 duration: 1
 listed: false
+copyedit: true
 ingredient: true
 interests: 
 technologies: "vnc"
